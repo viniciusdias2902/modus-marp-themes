@@ -139,11 +139,12 @@ table {
 }
 
 th {
-  background-color: var(--bg-red-intense);
-  color: var(--fg-main);
+  background-color: var(--bg-inactive);
+  color: var(--red);
   padding: 10px 16px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
+  border-bottom: 2px solid var(--red);
 }
 
 td {
@@ -207,23 +208,6 @@ section.lead h2 {
   color: var(--fg-dim);
   font-weight: 400;
   font-size: 1.3em;
-}
-
-section.invert {
-  background-color: var(--red);
-  color: var(--bg-main);
-  border-bottom-color: var(--cyan);
-}
-
-section.invert h1,
-section.invert h2,
-section.invert h3 {
-  color: var(--bg-main);
-}
-
-section.invert code {
-  background-color: rgba(0,0,0,0.3);
-  color: var(--cyan);
 }
 
 section .highlight {

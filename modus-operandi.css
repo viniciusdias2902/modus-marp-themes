@@ -196,27 +196,6 @@ section.lead h2 {
 }
 
 /* Invert slide */
-section.invert {
-  background-color: var(--blue);
-  color: var(--bg-main);
-  border-bottom-color: var(--bg-main);
-}
-
-section.invert h1,
-section.invert h2,
-section.invert h3 {
-  color: var(--bg-main);
-}
-
-section.invert code {
-  background-color: rgba(0,0,0,0.2);
-  color: var(--bg-cyan-intense);
-}
-
-section.invert a {
-  color: var(--bg-cyan-intense);
-}
-
 /* Utility: highlight box */
 section .highlight {
   background-color: var(--bg-yellow-nuanced);

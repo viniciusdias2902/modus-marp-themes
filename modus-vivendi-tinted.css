@@ -1,49 +1,48 @@
-/* @theme modus-operandi-deuteranopia */
-/* Modus Operandi Deuteranopia — Light Theme for Red-Green Color Deficiency */
+/* @theme modus-vivendi-tinted */
+/* Modus Vivendi Tinted — Night Sky Dark Theme */
 /* Based on Protesilaos Stavrou's Modus Themes for GNU Emacs */
 /* WCAG AAA conformant (≥7:1 contrast ratio) */
-/* Uses yellow/blue hues instead of red/green for all semantic color coding */
 
 @import 'default';
 
 :root {
-  --bg-main: #ffffff;
-  --bg-dim: #f2f2f2;
-  --fg-main: #000000;
-  --fg-dim: #595959;
-  --fg-alt: #193668;
-  --bg-active: #c4c4c4;
-  --bg-inactive: #e0e0e0;
-  --border: #9f9f9f;
-  --red: #a60000;
-  --red-warmer: #972500;
-  --yellow: #695500;
-  --yellow-warmer: #973300;
-  --yellow-cooler: #77492f;
-  --yellow-faint: #624416;
-  --blue: #0031a9;
-  --blue-warmer: #3548cf;
-  --blue-cooler: #0000b0;
-  --blue-faint: #003497;
-  --blue-intense: #0000ff;
-  --magenta: #721045;
-  --magenta-cooler: #531ab6;
-  --magenta-faint: #7c318f;
-  --cyan: #005e8b;
-  --cyan-warmer: #3f578f;
-  --cyan-cooler: #005f5f;
-  --cyan-faint: #005077;
-  --bg-blue-nuanced: #ecedff;
-  --bg-cyan-nuanced: #e0f2fa;
-  --bg-yellow-nuanced: #f8f0d0;
-  --bg-blue-intense: #bfc9ff;
-  --bg-yellow-intense: #f3d000;
-  --bg-cyan-intense: #a4d5f9;
-  /* Deuteranopia-specific: diffs use blue/yellow instead of green/red */
-  --bg-added: #d5d7ff;
-  --fg-added: #303099;
-  --bg-removed: #f4f099;
-  --fg-removed: #553d00;
+  --bg-main: #0d0e1c;
+  --bg-dim: #1d2235;
+  --fg-main: #ffffff;
+  --fg-dim: #989898;
+  --fg-alt: #c6daff;
+  --bg-active: #4a4f69;
+  --bg-inactive: #2b3045;
+  --border: #61647a;
+  --red: #ff5f59;
+  --red-warmer: #ff6b55;
+  --red-cooler: #ff7f86;
+  --red-faint: #ef8386;
+  --green: #44bc44;
+  --green-cooler: #11c777;
+  --green-faint: #88ca9f;
+  --green-warmer: #75c13e;
+  --yellow: #d0bc00;
+  --yellow-warmer: #fec43f;
+  --yellow-cooler: #dfaf7a;
+  --blue: #2fafff;
+  --blue-warmer: #79a8ff;
+  --blue-cooler: #00bcff;
+  --blue-faint: #82b0ec;
+  --magenta: #feacd0;
+  --magenta-warmer: #f78fe7;
+  --magenta-cooler: #b6a0ff;
+  --magenta-faint: #caa6df;
+  --cyan: #00d3d0;
+  --cyan-warmer: #4ae2f0;
+  --cyan-cooler: #6ae4b9;
+  --cyan-faint: #9ac8e0;
+  --bg-blue-nuanced: #12154a;
+  --bg-cyan-nuanced: #042837;
+  --bg-yellow-nuanced: #381d0f;
+  --bg-lavender: #38325c;
+  --fg-lavender: #dfc0f0;
+  --bg-blue-intense: #1640b0;
 }
 
 section {
@@ -53,7 +52,7 @@ section {
   font-size: 28px;
   line-height: 1.6;
   padding: 50px 60px;
-  border-bottom: 4px solid var(--blue);
+  border-bottom: 4px solid var(--magenta-cooler);
 }
 
 section::after {
@@ -66,7 +65,7 @@ h1 {
   color: var(--fg-main);
   font-size: 2.2em;
   font-weight: 700;
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 3px solid var(--magenta-cooler);
   padding-bottom: 12px;
   margin-bottom: 24px;
 }
@@ -90,17 +89,17 @@ a {
 }
 
 strong {
-  color: var(--blue-cooler);
+  color: var(--magenta-cooler);
   font-weight: 700;
 }
 
 em {
-  color: var(--yellow-warmer);
+  color: var(--cyan-warmer);
 }
 
 code {
   background-color: var(--bg-dim);
-  color: var(--blue-cooler);
+  color: var(--cyan-cooler);
   padding: 2px 8px;
   border-radius: 4px;
   font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace;
@@ -110,7 +109,7 @@ code {
 pre {
   background-color: var(--bg-dim);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--magenta-cooler);
   border-radius: 6px;
   padding: 20px 24px;
   font-size: 0.82em;
@@ -125,8 +124,8 @@ pre code {
 }
 
 blockquote {
-  border-left: 4px solid var(--blue-warmer);
-  background-color: var(--bg-blue-nuanced);
+  border-left: 4px solid var(--magenta-cooler);
+  background-color: var(--bg-lavender);
   padding: 16px 24px;
   margin: 16px 0;
   border-radius: 0 6px 6px 0;
@@ -144,11 +143,12 @@ table {
 }
 
 th {
-  background-color: var(--blue);
-  color: var(--bg-main);
+  background-color: var(--bg-inactive);
+  color: var(--blue-warmer);
   padding: 10px 16px;
   text-align: left;
-  font-weight: 600;
+  font-weight: 700;
+  border-bottom: 2px solid var(--blue-warmer);
 }
 
 td {
@@ -170,27 +170,8 @@ li {
 }
 
 li::marker {
-  color: var(--blue);
+  color: var(--magenta-cooler);
   font-weight: 700;
-}
-
-/* Success/error states use blue/yellow instead of green/red */
-section .success {
-  background-color: var(--bg-added);
-  border: 1px solid var(--fg-added);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 12px 0;
-  color: var(--fg-added);
-}
-
-section .error {
-  background-color: var(--bg-removed);
-  border: 1px solid var(--fg-removed);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 12px 0;
-  color: var(--fg-removed);
 }
 
 section.lead {
@@ -200,13 +181,13 @@ section.lead {
   align-items: center;
   text-align: center;
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-dim) 100%);
-  border-bottom: 6px solid var(--blue);
+  border-bottom: 6px solid var(--magenta-cooler);
 }
 
 section.lead h1 {
   border-bottom: none;
   font-size: 2.6em;
-  color: var(--blue);
+  color: var(--magenta-cooler);
 }
 
 section.lead h2 {

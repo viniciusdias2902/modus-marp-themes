@@ -210,23 +210,6 @@ section.lead h2 {
   font-size: 1.3em;
 }
 
-section.invert {
-  background-color: var(--red-cooler);
-  color: var(--bg-main);
-  border-bottom-color: var(--bg-main);
-}
-
-section.invert h1,
-section.invert h2,
-section.invert h3 {
-  color: var(--bg-main);
-}
-
-section.invert code {
-  background-color: rgba(0,0,0,0.2);
-  color: var(--bg-cyan-intense);
-}
-
 section .highlight {
   background-color: var(--bg-red-nuanced);
   border: 1px solid var(--red-faint);

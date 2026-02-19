@@ -1,49 +1,50 @@
-/* @theme modus-operandi-deuteranopia */
-/* Modus Operandi Deuteranopia — Light Theme for Red-Green Color Deficiency */
+/* @theme modus-operandi-tinted */
+/* Modus Operandi Tinted — Warm Light Theme (ochre/earthy tones) */
 /* Based on Protesilaos Stavrou's Modus Themes for GNU Emacs */
 /* WCAG AAA conformant (≥7:1 contrast ratio) */
-/* Uses yellow/blue hues instead of red/green for all semantic color coding */
 
 @import 'default';
 
 :root {
-  --bg-main: #ffffff;
-  --bg-dim: #f2f2f2;
+  --bg-main: #fbf7f0;
+  --bg-dim: #efe9dd;
   --fg-main: #000000;
   --fg-dim: #595959;
   --fg-alt: #193668;
-  --bg-active: #c4c4c4;
-  --bg-inactive: #e0e0e0;
-  --border: #9f9f9f;
+  --bg-active: #c9b9b0;
+  --bg-inactive: #dfd5cf;
+  --border: #9f9690;
   --red: #a60000;
   --red-warmer: #972500;
-  --yellow: #695500;
-  --yellow-warmer: #973300;
-  --yellow-cooler: #77492f;
-  --yellow-faint: #624416;
+  --red-cooler: #a0132f;
+  --red-faint: #7f0000;
+  --green: #006300;
+  --green-cooler: #00603f;
+  --green-faint: #2a5045;
+  --green-warmer: #306010;
+  --yellow: #6d5000;
+  --yellow-warmer: #894000;
+  --yellow-cooler: #602938;
+  --yellow-faint: #574316;
   --blue: #0031a9;
-  --blue-warmer: #3548cf;
+  --blue-warmer: #3546c2;
   --blue-cooler: #0000b0;
   --blue-faint: #003497;
-  --blue-intense: #0000ff;
   --magenta: #721045;
+  --magenta-warmer: #8f0075;
   --magenta-cooler: #531ab6;
   --magenta-faint: #7c318f;
-  --cyan: #005e8b;
-  --cyan-warmer: #3f578f;
+  --cyan: #00598b;
+  --cyan-warmer: #32548f;
   --cyan-cooler: #005f5f;
-  --cyan-faint: #005077;
+  --cyan-faint: #304463;
   --bg-blue-nuanced: #ecedff;
   --bg-cyan-nuanced: #e0f2fa;
   --bg-yellow-nuanced: #f8f0d0;
-  --bg-blue-intense: #bfc9ff;
-  --bg-yellow-intense: #f3d000;
-  --bg-cyan-intense: #a4d5f9;
-  /* Deuteranopia-specific: diffs use blue/yellow instead of green/red */
-  --bg-added: #d5d7ff;
-  --fg-added: #303099;
-  --bg-removed: #f4f099;
-  --fg-removed: #553d00;
+  --bg-red-nuanced: #ffe8e8;
+  --bg-ochre: #f0e3c0;
+  --fg-ochre: #573a30;
+  --bg-sage: #c0e7d4;
 }
 
 section {
@@ -53,7 +54,7 @@ section {
   font-size: 28px;
   line-height: 1.6;
   padding: 50px 60px;
-  border-bottom: 4px solid var(--blue);
+  border-bottom: 4px solid var(--red-cooler);
 }
 
 section::after {
@@ -66,13 +67,13 @@ h1 {
   color: var(--fg-main);
   font-size: 2.2em;
   font-weight: 700;
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 3px solid var(--red-cooler);
   padding-bottom: 12px;
   margin-bottom: 24px;
 }
 
 h2 {
-  color: var(--blue-warmer);
+  color: var(--blue);
   font-size: 1.6em;
   font-weight: 600;
   margin-bottom: 16px;
@@ -90,17 +91,17 @@ a {
 }
 
 strong {
-  color: var(--blue-cooler);
+  color: var(--magenta-cooler);
   font-weight: 700;
 }
 
 em {
-  color: var(--yellow-warmer);
+  color: var(--cyan-warmer);
 }
 
 code {
   background-color: var(--bg-dim);
-  color: var(--blue-cooler);
+  color: var(--green-cooler);
   padding: 2px 8px;
   border-radius: 4px;
   font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace;
@@ -110,7 +111,7 @@ code {
 pre {
   background-color: var(--bg-dim);
   border: 1px solid var(--border);
-  border-left: 4px solid var(--blue);
+  border-left: 4px solid var(--cyan);
   border-radius: 6px;
   padding: 20px 24px;
   font-size: 0.82em;
@@ -125,8 +126,8 @@ pre code {
 }
 
 blockquote {
-  border-left: 4px solid var(--blue-warmer);
-  background-color: var(--bg-blue-nuanced);
+  border-left: 4px solid var(--yellow-warmer);
+  background-color: var(--bg-ochre);
   padding: 16px 24px;
   margin: 16px 0;
   border-radius: 0 6px 6px 0;
@@ -170,27 +171,8 @@ li {
 }
 
 li::marker {
-  color: var(--blue);
+  color: var(--red-cooler);
   font-weight: 700;
-}
-
-/* Success/error states use blue/yellow instead of green/red */
-section .success {
-  background-color: var(--bg-added);
-  border: 1px solid var(--fg-added);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 12px 0;
-  color: var(--fg-added);
-}
-
-section .error {
-  background-color: var(--bg-removed);
-  border: 1px solid var(--fg-removed);
-  border-radius: 8px;
-  padding: 16px 20px;
-  margin: 12px 0;
-  color: var(--fg-removed);
 }
 
 section.lead {
@@ -200,13 +182,13 @@ section.lead {
   align-items: center;
   text-align: center;
   background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-dim) 100%);
-  border-bottom: 6px solid var(--blue);
+  border-bottom: 6px solid var(--red-cooler);
 }
 
 section.lead h1 {
   border-bottom: none;
   font-size: 2.6em;
-  color: var(--blue);
+  color: var(--red-cooler);
 }
 
 section.lead h2 {
