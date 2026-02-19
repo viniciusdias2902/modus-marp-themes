@@ -1,0 +1,254 @@
+/* @theme modus-operandi-tritanopia */
+/* Modus Operandi Tritanopia — Light Theme for Blue-Yellow Color Deficiency */
+/* Based on Protesilaos Stavrou's Modus Themes for GNU Emacs */
+/* WCAG AAA conformant (≥7:1 contrast ratio) */
+/* Uses red/cyan hues instead of blue/yellow for all semantic color coding */
+
+@import 'default';
+
+:root {
+  --bg-main: #ffffff;
+  --bg-dim: #f2f2f2;
+  --fg-main: #000000;
+  --fg-dim: #595959;
+  --fg-alt: #024960;
+  --bg-active: #c4c4c4;
+  --bg-inactive: #e0e0e0;
+  --border: #9f9f9f;
+  --red: #a60000;
+  --red-warmer: #b21100;
+  --red-cooler: #a0132f;
+  --red-faint: #702000;
+  --red-intense: #d00000;
+  --blue: #0031a9;
+  --blue-warmer: #3548cf;
+  --magenta: #721045;
+  --magenta-warmer: #8f0075;
+  --magenta-cooler: #531ab6;
+  --magenta-faint: #7c318f;
+  --cyan: #005e8b;
+  --cyan-warmer: #3f578f;
+  --cyan-cooler: #005f5f;
+  --cyan-faint: #004f5f;
+  --bg-blue-nuanced: #ecedff;
+  --bg-cyan-nuanced: #e0f2fa;
+  --bg-red-nuanced: #ffe8e8;
+  --bg-red-intense: #ff8f88;
+  --bg-cyan-intense: #a4d5f9;
+  /* Tritanopia-specific: diffs use red/cyan instead of green/yellow */
+  --bg-added: #b5e7ff;
+  --fg-added: #005079;
+  --bg-removed: #ffd8d5;
+  --fg-removed: #8f1313;
+}
+
+section {
+  background-color: var(--bg-main);
+  color: var(--fg-main);
+  font-family: 'Inter', 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+  padding: 50px 60px;
+  border-bottom: 4px solid var(--red);
+}
+
+section::after {
+  content: attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  color: var(--fg-dim);
+  font-size: 16px;
+}
+
+h1 {
+  color: var(--fg-main);
+  font-size: 2.2em;
+  font-weight: 700;
+  border-bottom: 3px solid var(--red);
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+h2 {
+  color: var(--red-cooler);
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+h3 {
+  color: var(--cyan);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+
+a {
+  color: var(--cyan);
+  text-decoration: underline;
+}
+
+strong {
+  color: var(--red-warmer);
+  font-weight: 700;
+}
+
+em {
+  color: var(--cyan-warmer);
+}
+
+code {
+  background-color: var(--bg-dim);
+  color: var(--cyan);
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', 'Fira Code', 'Source Code Pro', monospace;
+  font-size: 0.88em;
+}
+
+pre {
+  background-color: var(--bg-dim);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  padding: 20px 24px;
+  font-size: 0.82em;
+  line-height: 1.5;
+  overflow-x: auto;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  color: var(--fg-main);
+}
+
+blockquote {
+  border-left: 4px solid var(--red-cooler);
+  background-color: var(--bg-red-nuanced);
+  padding: 16px 24px;
+  margin: 16px 0;
+  border-radius: 0 6px 6px 0;
+  color: var(--fg-main);
+}
+
+blockquote p {
+  margin: 0;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+
+th {
+  background-color: var(--red-cooler);
+  color: var(--bg-main);
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 8px 16px;
+  border-bottom: 1px solid var(--border);
+}
+
+tr:nth-child(even) {
+  background-color: var(--bg-dim);
+}
+
+ul, ol {
+  margin: 8px 0;
+  padding-left: 28px;
+}
+
+li {
+  margin-bottom: 6px;
+}
+
+li::marker {
+  color: var(--red);
+  font-weight: 700;
+}
+
+section .success {
+  background-color: var(--bg-added);
+  border: 1px solid var(--fg-added);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0;
+  color: var(--fg-added);
+}
+
+section .error {
+  background-color: var(--bg-removed);
+  border: 1px solid var(--fg-removed);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0;
+  color: var(--fg-removed);
+}
+
+section.lead {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(135deg, var(--bg-main) 0%, var(--bg-dim) 100%);
+  border-bottom: 6px solid var(--red);
+}
+
+section.lead h1 {
+  border-bottom: none;
+  font-size: 2.6em;
+  color: var(--red);
+}
+
+section.lead h2 {
+  color: var(--fg-dim);
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+section.invert {
+  background-color: var(--red-cooler);
+  color: var(--bg-main);
+  border-bottom-color: var(--bg-main);
+}
+
+section.invert h1,
+section.invert h2,
+section.invert h3 {
+  color: var(--bg-main);
+}
+
+section.invert code {
+  background-color: rgba(0,0,0,0.2);
+  color: var(--bg-cyan-intense);
+}
+
+section .highlight {
+  background-color: var(--bg-red-nuanced);
+  border: 1px solid var(--red-faint);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+
+section .info {
+  background-color: var(--bg-cyan-nuanced);
+  border: 1px solid var(--cyan);
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+footer {
+  color: var(--fg-dim);
+  font-size: 14px;
+}
