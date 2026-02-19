@@ -157,9 +157,6 @@ td {
   background-color: var(--bg-main);
 }
 
-tr:nth-child(even) td {
-  background-color: var(--bg-dim);
-}
 
 ul, ol {
   margin: 8px 0;
