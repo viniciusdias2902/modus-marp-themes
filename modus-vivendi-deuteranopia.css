@@ -138,6 +138,8 @@ table {
   border-collapse: collapse;
   width: 100%;
   margin: 16px 0;
+  background-color: var(--bg-main);
+  color: var(--fg-main);
 }
 
 th {
@@ -152,9 +154,10 @@ th {
 td {
   padding: 8px 16px;
   border-bottom: 1px solid var(--border);
+  background-color: var(--bg-main);
 }
 
-tr:nth-child(even) {
+tr:nth-child(even) td {
   background-color: var(--bg-dim);
 }
 
