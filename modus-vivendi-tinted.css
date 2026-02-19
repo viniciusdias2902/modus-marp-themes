@@ -123,6 +123,23 @@ pre code {
   color: var(--fg-main);
 }
 
+pre code .hljs-keyword { color: var(--magenta-cooler); }
+pre code .hljs-string,
+pre code .hljs-attr { color: var(--blue-warmer); }
+pre code .hljs-comment { color: var(--fg-dim); font-style: italic; }
+pre code .hljs-function,
+pre code .hljs-title { color: var(--magenta); }
+pre code .hljs-number,
+pre code .hljs-literal { color: var(--blue-cooler); }
+pre code .hljs-built_in { color: var(--cyan); }
+pre code .hljs-type { color: var(--cyan-cooler); }
+pre code .hljs-tag { color: var(--blue); }
+pre code .hljs-name { color: var(--magenta); }
+pre code .hljs-attribute { color: var(--cyan-cooler); }
+pre code .hljs-variable { color: var(--cyan); }
+pre code .hljs-params { color: var(--cyan); }
+pre code .hljs-meta { color: var(--yellow); }
+
 blockquote {
   border-left: 4px solid var(--magenta-cooler);
   background-color: var(--bg-lavender);
