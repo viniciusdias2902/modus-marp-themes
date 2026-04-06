@@ -213,6 +213,18 @@ section.lead h2 {
   font-size: 1.3em;
 }
 
+section.lead::before {
+  content: '';
+  display: block;
+  width: 120px;
+  height: 120px;
+  background-image: url('uespi_brasao.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 16px;
+}
+
 section .highlight {
   background-color: var(--bg-yellow-nuanced);
   border: 1px solid var(--yellow-warmer);
