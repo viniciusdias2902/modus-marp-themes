@@ -72,6 +72,8 @@ Hooks permitem usar *estado* e outras funcionalidades do React em componentes fu
 
 ---
 
+<!-- _class: compact -->
+
 # Exemplo: `useState` + `useEffect`
 
 ```jsx
@@ -183,4 +185,4 @@ React é uma ferramenta *poderosa*, mas o domínio vem com a prática.
 
 # Perguntas?
 
-## vyvy292004@gmail.com
+## email@provedor.com

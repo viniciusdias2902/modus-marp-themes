@@ -243,6 +243,14 @@ section .info {
   margin: 12px 0;
 }
 
+section.compact {
+  font-size: 22px;
+}
+
+section.compact pre {
+  font-size: 0.78em;
+}
+
 img {
   max-width: 100%;
   border-radius: 6px;

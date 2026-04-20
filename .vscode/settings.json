@@ -1,0 +1,12 @@
+{
+  "markdown.marp.themes": [
+    "./modus-operandi.css",
+    "./modus-vivendi.css",
+    "./modus-operandi-tinted.css",
+    "./modus-vivendi-tinted.css",
+    "./modus-operandi-deuteranopia.css",
+    "./modus-vivendi-deuteranopia.css",
+    "./modus-operandi-tritanopia.css",
+    "./modus-vivendi-tritanopia.css"
+  ]
+}
